@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package invoice;
+
+service InvoiceService {
+  rpc createInvoice (Empty) returns (InvoiceResponce) {}
+}
+
+message InvoiceResponce {
+  string status = 1;
+}
+
+message Empty {
+}
